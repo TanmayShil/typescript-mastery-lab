@@ -18,3 +18,8 @@ npm install -g typescript
 # Install 'tsx' to run .ts files directly without manual transpilation
 npm install -g tsx
 ```
+### 3. How to Run
+To execute a specific lesson, use the following command:
+```bash
+tsx <filename>.ts
+```
