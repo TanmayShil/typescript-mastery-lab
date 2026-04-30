@@ -60,6 +60,10 @@
 // // void operator
 // console.log(void a);   // undefined 
 
+// // as operator - used to cast a value to a specific type.
+// let a: any = 10;
+// console.log(a as number);  // number 
+
 // // delete operator - used to remove a property from an object.
 // type User = {
 //     name: string;
