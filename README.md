@@ -4,6 +4,16 @@ This repository is a structured guide to mastering TypeScript, moving from funda
 
 ---
 
+## 🎯 Goals
+
+- Build strong fundamentals of TypeScript
+- Understand type safety and static typing deeply
+- Learn advanced patterns used in production apps
+- Practice with real-world examples and mini projects
+- Prepare for interviews and professional development
+
+---
+
 ## 🛠️ Tech Stack & Setup
 
 ### 1. Prerequisites
