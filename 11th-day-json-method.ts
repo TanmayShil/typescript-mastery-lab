@@ -111,6 +111,38 @@
 
 
 
+//------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------//
+// //shallow copy - doesn't copy nested objects. nested object is same reference
+// let obj1 = {
+//     name: "John",
+//     age: 30,
+//     address: {
+//         city: "New York",
+//         state: "New York"
+//     }
+// }
+// let obj2 = { ...obj1 };
+// console.log(obj2); //address same reference
+// console.log(obj1 === obj2); //false
+// console.log(obj1.address === obj2.address); //true
+
+// //deep copy - copies nested objects. nested object is different reference
+// let obj3 = JSON.parse(JSON.stringify(obj1));
+// console.log(obj3);
+// console.log(obj1 === obj3); //false
+// console.log(obj1.address === obj3.address); //false
+
+// //using structuredClone
+// let obj4 = structuredClone(obj1);
+// console.log(obj4);
+// console.log(obj1 === obj4); //false
+// console.log(obj1.address === obj4.address); //false
+
+//Difference between shallow copy and deep copy
+//Shallow copy - doesn't copy nested objects. nested object is same reference
+//Deep copy - copies nested objects. nested object is different reference
+
 
 // *****************************************************************************************//
 // *****************************************************************************************//
