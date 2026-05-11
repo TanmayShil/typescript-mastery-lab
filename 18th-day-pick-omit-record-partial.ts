@@ -245,14 +245,132 @@
 //---------------------------------------------------------------------------------
 // Problem Set:-
 
-// 1. write a function that takes an array of strings and returns an array of strings with the first letter of each string capitalized.
+// // 1. write a function that takes an array of strings and returns an array of strings with the first letter of each string capitalized.
 
-function capitalizeFirstLetter<T extends string>(arr: T[]): T[] {
-  return arr.map((str: T) => {
-    return str.charAt(0).toUpperCase() + str.slice(1) as T;
-  });
-}
+// function capitalizeFirstLetter<T extends string>(arr: T[]): T[] {
+//   return arr.map((str: T) => {
+//     return str.charAt(0).toUpperCase() + str.slice(1) as T;
+//   });
+// }
 
-console.log(capitalizeFirstLetter(["hello", "world", "typescript"]));// ["Hello", "World", "Typescript"]
+// console.log(capitalizeFirstLetter(["hello", "world", "typescript"]));// ["Hello", "World", "Typescript"]
 
+
+//-----------------------------------------------------------------------------------
+// // 2. Create a function that takes an object and a list of keys, and returns a new object with only the specified keys.
+
+// function pick<T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> {
+//   const result = {} as Pick<T, K>;
+//   keys.forEach((key) => {
+//     result[key] = obj[key];
+//   });
+//   return result;
+// }
+
+// console.log(pick({ a: 1, b: 2, c: 3 }, ["a", "c"]));// { a: 1, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 3. Create a function that takes an object and a list of keys, and returns a new object with all keys except the specified keys.
+
+// function omit<T, K extends keyof T>(obj: T, keys: K[]): Omit<T, K> {
+//   const result = {} as Omit<T, K>;
+//   keys.forEach((key) => {
+//     result[key] = obj[key];
+//   });
+//   return result;
+// }
+
+// console.log(omit({ a: 1, b: 2, c: 3 }, ["a", "c"]));// { a: 1, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 4. Create a function that takes an object and a list of keys, and returns a new object with all properties optional.
+
+// function partial<T>(obj: T): Partial<T> {
+//   const result = {} as Partial<T>;
+//   for (const key in obj) {
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
+// console.log(partial({ a: 1, b: 2, c: 3 }));// { a: 1, b: 2, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 5. Create a function that takes an object and a list of keys, and returns a new object with all properties required.
+
+// function required<T>(obj: T): Required<T> {
+//   const result = {} as Required<T>;
+//   for (const key in obj) {
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
+// const required = <T>(obj: T): Required<T> => {
+//   return obj;
+// };
+// console.log(required({ a: 1, b: 2, c: 3 }));// { a: 1, b: 2, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 6. Create a function that takes an object and a list of keys, and returns a new object with all properties readonly.
+
+// function readonly<T>(obj: T): Readonly<T> {
+//   const result = {} as Readonly<T>;
+//   for (const key in obj) {
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
+// console.log(readonly({ a: 1, b: 2, c: 3 }));// { a: 1, b: 2, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 7. Create a function that takes an object and a list of keys, and returns a new object with all properties mutable.
+
+// function mutable<T>(obj: T): Mutable<T> {
+//   const result = {} as Mutable<T>;
+//   for (const key in obj) {
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
+// console.log(mutable({ a: 1, b: 2, c: 3 }));// { a: 1, b: 2, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 8. Create a function that takes an object and a list of keys, and returns a new object with all properties readonly and mutable.
+
+// function readonlyAndMutable<T>(obj: T): ReadonlyAndMutable<T> {
+//   const result = {} as ReadonlyAndMutable<T>;
+//   for (const key in obj) {
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
+// console.log(readonlyAndMutable({ a: 1, b: 2, c: 3 }));// { a: 1, b: 2, c: 3 }
+
+
+//-----------------------------------------------------------------------------------
+// // 9. Create a function that takes an object and a list of keys, and returns a new object with all properties readonly and mutable.
+
+// function readonlyAndMutable<T>(obj: T): ReadonlyAndMutable<T> {
+//   const result = {} as ReadonlyAndMutable<T>;
+//   for (const key in obj) {
+//     result[key] = obj[key];
+//   }
+//   return result;
+// }
+
+// console.log(readonlyAndMutable({ a: 1, b: 2, c: 3 }));// { a: 1, b: 2, c: 3 }
+
+
+// *****************************************************************************************//
+// *****************************************************************************************//
 
